@@ -54,8 +54,8 @@ jobs:
       #   semgrep scan --config auto --config p/xss --error src/
       - name: 🔍 SAST - Semgrep
         run: |
-        pip install semgrep
-        semgrep scan --config auto --error src/
+          pip install semgrep
+          semgrep scan --config auto --error src/
       # ❌ PASSO A IMPLEMENTAR — SCA com Grype
       # Dica: primeiro, gere o package-lock pelo npm:
       #   npm install --package-lock-only --no-audit --no-fund
